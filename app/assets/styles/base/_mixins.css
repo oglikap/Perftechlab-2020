@@ -23,3 +23,7 @@
     display: table;
   }
 }
+
+@define-mixin heading {
+  font-family: $font-heading;
+}
