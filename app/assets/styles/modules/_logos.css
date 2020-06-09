@@ -1,0 +1,22 @@
+.logos {
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25%;
+    @mixin heading;
+    font-size: .7rem;
+    margin: .5rem 0;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
