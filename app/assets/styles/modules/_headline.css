@@ -1,0 +1,13 @@
+.headline {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1.25;
+  font-family: $font-heading;
+  word-spacing: -.5rem;
+
+  &--small {
+    font-size: 1.1rem;
+  }
+
+}

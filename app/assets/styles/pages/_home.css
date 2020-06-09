@@ -1,0 +1,25 @@
+.bs-home {
+
+  &-about {
+    background-color: #f7f7f7;
+
+    &__text {
+      background-color: #fff;
+      font-size: .875rem;
+      border-radius: 1px;
+      border: 1px solid black;
+
+      @mixin atMedium {
+        border: 0;
+      }
+
+      &-inner {
+        padding: 1rem;
+
+        @mixin atLarge {
+          padding: 1rem 2rem;;
+        }
+      }
+    }
+  }
+}

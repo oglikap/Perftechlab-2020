@@ -1,0 +1,64 @@
+.bs-hooks-square {
+  position: relative;
+
+  &--small {
+    width: 3rem;
+    height: 3rem;
+
+    @mixin atMedium {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &--medium {
+    width: 5.5rem;
+    height: 5.5rem;
+
+    @mixin atMedium {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &__text {
+    height: 100%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    line-height: 1;
+    font-family: $font-heading;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.bs-hooks-square::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+
+  background-color: currentColor;
+  -webkit-mask-image: url(/assets/images/foto-kader.png);
+  -webkit-mask-size: cover;
+  mask-image: url(/assets/images/foto-kader.png);
+  mask-size: cover;
+  position: absolute;
+
+}
+
+.bs-hooks-square--red {
+
+  &::before {
+    background-color: $color-red;
+  }
+
+  span {
+    color: $color-red;
+  }
+
+}

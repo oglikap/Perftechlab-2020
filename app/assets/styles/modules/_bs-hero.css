@@ -1,0 +1,98 @@
+.bs-hero {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-smaller.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+
+  @mixin atSmall {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-small.jpg);
+    min-height: 80vh;
+  }
+
+  @mixin atMedium {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-medium.jpg);
+    min-height: 90vh;
+  }
+
+  @mixin atLarge {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg.jpg);
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__text {
+    width: 50%;
+    color: #f7f7f7;
+    font-size: .8rem;
+
+    @mixin atMedium {
+      font-size: .95rem;
+      width: 33.333333%;
+    }
+
+    &-inner {
+      padding: 2rem .5rem;
+    }
+  }
+
+  &__button {
+    color: #000;
+
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(6deg);
+
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+
+    @mixin atMedium {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    &-text {
+      height: 100%;
+      text-transform: uppercase;
+
+      line-height: .85;
+      font-family: $font-heading;
+      font-size: 1.75rem;
+
+      color: $color-red;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @mixin atMedium {
+        font-size: 2.25rem;
+      }
+    }
+
+    &-link {
+      color: #222;
+      display: inline-block;
+      transition: all .2s;
+      text-decoration: none;
+
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+        transform: scale(1.05);
+      }
+    }
+
+  }
+}
