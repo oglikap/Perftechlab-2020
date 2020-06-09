@@ -26,4 +26,5 @@
 
 @define-mixin heading {
   font-family: $font-heading;
+  word-spacing: -.5rem;
 }

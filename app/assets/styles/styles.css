@@ -15,5 +15,7 @@
 @import "modules/_flex-row";
 @import "modules/_generic-content-container";
 @import "modules/_logos";
+@import "modules/_site-footer";
+@import "modules/_line-vertical";
 
 @import "pages/_home";

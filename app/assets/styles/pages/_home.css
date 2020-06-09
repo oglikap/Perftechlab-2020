@@ -22,4 +22,12 @@
       }
     }
   }
+
+  &-incoming {
+    background-color: $color-black;
+
+    * {
+      color: #f7f7f7;
+    }
+  }
 }
