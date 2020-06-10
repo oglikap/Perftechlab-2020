@@ -1,0 +1,20 @@
+.logo-area {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__wrapper {
+    display: flex;
+    border-top: 1px solid;
+  }
+
+  &__partners,
+  &__powered {
+    flex: 0 0 50%;
+    padding: 1rem;
+  }
+
+  &__powered {
+    flex: 1;
+  }
+}

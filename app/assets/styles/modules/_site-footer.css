@@ -1,6 +1,6 @@
 .site-footer {
   background-color: $color-black;
-  padding: .5rem 0;
+  /* padding: .5rem 0; */
   text-align: center;
 
   * {
@@ -8,7 +8,7 @@
   }
 
   &__wrap {
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding-bottom: 2rem;
     border-top: 1px solid;
     display: flex;
@@ -33,14 +33,15 @@
     padding: 1rem 0;
 
     &-location {
-      width: 6rem;
+      width: 7.5rem;
     }
   }
 
   &__colophon {
     flex: 0 0 33%;
-    font-size: .85rem;
-    padding: 2rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    padding: 1rem 2rem;
   }
 
   &__social {

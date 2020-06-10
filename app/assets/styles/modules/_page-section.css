@@ -1,6 +1,10 @@
 .page-section {
   padding: 2rem 0;
 
+  /* &--padding-remove-top {
+    padding-top: 0 !important;
+  } */
+
   @mixin atMedium {
     padding: 4.5rem 0;
   }

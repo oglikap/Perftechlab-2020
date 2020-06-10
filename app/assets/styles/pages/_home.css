@@ -3,6 +3,15 @@
   &-about {
     background-color: #f7f7f7;
 
+    &__wrapper {
+      border-top: 1px solid;
+      display: flex;
+    }
+
+    &__item {
+      flex: 0 0 33.33%;
+    }
+
     &__text {
       background-color: #fff;
       font-size: .875rem;

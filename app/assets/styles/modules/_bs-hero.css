@@ -12,11 +12,11 @@
 
   @mixin atMedium {
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-medium.jpg);
-    min-height: 90vh;
+    /* min-height: 90vh; */
   }
 
   @mixin atLarge {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg.jpg);
   }
 

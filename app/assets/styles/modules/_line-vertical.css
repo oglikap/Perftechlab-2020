@@ -4,7 +4,7 @@
   &::after {
     content: '';
     display: block;
-    background-color: #f7f7f7;
+    background-color: currentColor;
     height: 3rem;
     width: 1px;
     position: absolute;
