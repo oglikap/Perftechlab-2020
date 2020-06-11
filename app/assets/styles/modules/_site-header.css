@@ -1,0 +1,112 @@
+.site-header {
+  transition: background-color .3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba(#fff, .75);
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+
+    @mixin atMedium {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 33%;
+  }
+
+  &__icon-location {
+    width: 8rem;
+    height: 5rem;
+
+    @mixin atMedium {
+      width: 12.5rem;
+      height: 6rem;
+    }
+  }
+
+  &__menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    position: absolute;
+    right: 1rem;
+    z-index: 13;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 2rem;
+      height: 3px;
+      background-color: $color-black;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 2rem;
+      height: 3px;
+      background-color: $color-black;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 0;
+      width: 2rem;
+      height: 3px;
+      background-color: $color-black;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.2) translateY(-6px);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.2) translateY(7px);
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.25);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 12;
+      transform: scale(1);
+    }
+  }
+
+}

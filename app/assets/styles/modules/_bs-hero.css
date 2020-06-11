@@ -1,17 +1,17 @@
 .bs-hero {
   position: relative;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-smaller.jpg);
+  background-image: linear-gradient(to right, rgba(#000, .5), transparent), url(/assets/images/perftech-bg-smaller.jpg);
   min-height: 70vh;
   background-size: cover;
   background-position: center;
 
   @mixin atSmall {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-small.jpg);
+    background-image: linear-gradient(to right, rgba(#000, .5), transparent), url(/assets/images/perftech-bg-small.jpg);
     min-height: 80vh;
   }
 
   @mixin atMedium {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), transparent), url(/assets/images/perftech-bg-medium.jpg);
+    background-image: linear-gradient(to right, rgba(#000, .5), transparent), url(/assets/images/perftech-bg-medium.jpg);
     /* min-height: 90vh; */
   }
 
@@ -25,9 +25,14 @@
   }
 
   &__text {
-    width: 50%;
+    width: 66.66%;
     color: #f7f7f7;
-    font-size: .8rem;
+    font-size: .75rem;
+
+    @mixin atSmall {
+      width: 50%;
+      font-size: .8rem;
+    }
 
     @mixin atMedium {
       font-size: .95rem;

@@ -2,8 +2,8 @@
   position: relative;
 
   &--small {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 
     @mixin atMedium {
       width: 3.5rem;
@@ -14,6 +14,7 @@
   &--medium {
     width: 5.5rem;
     height: 5.5rem;
+    z-index: 10;
 
     @mixin atMedium {
       width: 8rem;
@@ -22,17 +23,20 @@
   }
 
   &__text {
+    font-size: .8rem;
     height: 100%;
     text-transform: uppercase;
     margin: 0 auto;
     line-height: 1;
     font-family: $font-heading;
-    font-size: 1rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @mixin atMedium {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -48,6 +52,7 @@
   mask-image: url(/assets/images/foto-kader.png);
   mask-size: cover;
   position: absolute;
+  z-index: 4;
 
 }
 

@@ -1,0 +1,7 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  @mixin heading;
+  border: 1px solid;
+  padding: 2px 4px;
+}

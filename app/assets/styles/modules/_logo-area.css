@@ -1,17 +1,30 @@
 .logo-area {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
   &__wrapper {
     display: flex;
-    border-top: 1px solid;
+    flex-wrap: wrap;
+    border: 1px solid;
+
+    @mixin atLarge {
+      border: 0;
+      border-top: 1px solid;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__partners,
   &__powered {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     padding: 1rem;
+
+    @mixin atLarge {
+      flex: 0 0 50%;
+      padding: 0 1rem;
+    }
+
   }
 
   &__powered {
