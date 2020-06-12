@@ -23,5 +23,6 @@
 @import "modules/_logo-area";
 @import "modules/_tiles";
 @import "modules/_btn";
+@import "modules/_reveal-item";
 
 @import "pages/_home";

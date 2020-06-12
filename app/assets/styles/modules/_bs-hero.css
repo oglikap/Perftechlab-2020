@@ -58,7 +58,7 @@
     transform: rotate(6deg) translateY(-70%);
 
     position: absolute;
-    top: 70%%;
+    top: 33%;
     right: 5%;
 
     @mixin atMedium {
