@@ -1,12 +1,7 @@
 .primary-nav {
     flex: 1;
     display: flex;
-    justify-content: center;
-
-    @mixin atLarge {
-      justify-content: flex-end;
-    }
-
+    justify-content: flex-end;
 
   &__list {
     display: flex;
@@ -17,7 +12,7 @@
 
   &__item {
     @mixin heading;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   &__link {

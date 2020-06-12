@@ -45,21 +45,21 @@
   }
 
   &__button {
-    color: #000;
+    color: #f7f7f7;
 
     width: 7.5rem;
     height: 7.5rem;
-    border-radius: 50%;
-    background-color: #f7f7f7;
+    /* border-radius: 50%; */
+    /* background-color: #f7f7f7; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(6deg);
+    transform: rotate(6deg) translateY(-70%);
 
     position: absolute;
-    top: 2.5%;
-    right: 2.5%;
+    top: 70%%;
+    right: 5%;
 
     @mixin atMedium {
       width: 11rem;
@@ -87,7 +87,7 @@
     }
 
     &-link {
-      color: #222;
+      color: #fff;
       display: inline-block;
       transition: all .2s;
       text-decoration: none;
