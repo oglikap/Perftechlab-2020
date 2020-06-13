@@ -35,6 +35,7 @@
     }
 
     @mixin atMedium {
+      margin-top: 6.25rem;
       font-size: .95rem;
       width: 33.333333%;
     }
@@ -45,6 +46,7 @@
   }
 
   &__button {
+    margin-top: 6.25rem;
     color: #f7f7f7;
 
     width: 7.5rem;
